@@ -45,9 +45,19 @@ fn main() {
     // TODO: Use match to classify a number
     // 1 => "one", 2 => "two", 3 => "three", _ => "other"
     let digit = 2;
-    
+    match digit {
+        1 => println!("one"),
+        2 => println!("two"),
+        3 => println!("three"),
+        _ => println!("other"),
+    }
     
     // TODO: Use match with ranges
     // 1..=5 => "small", 6..=10 => "medium", _ => "large"
-    
+    let range = 7;
+        match range {
+        1..=5 => println!("small"),
+        6..=10 => println!("medium"),
+        _ => println!("large"),
+    }
 }
